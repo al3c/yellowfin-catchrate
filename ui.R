@@ -31,6 +31,7 @@ shinyUI(fluidPage(
                    "the yellow fin tuna catch rate in the Tropical Indian Ocean",
                    "between 1952-2000. Catch rates for 2001-2005 were predicted",
                    "using a simple polynomial regression model."))),
+      p(HTML("The count reflects the mean number of fish per 100 hooks cast.")),
       p(HTML("To view the catch rate from the original dataset, drag the slider above.")),
       p(HTML("To select a year (between 2001-2005) to predict the catch rate, select from the dropdown menu."))
     ),

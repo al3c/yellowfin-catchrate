@@ -30,7 +30,7 @@ shinyServer(function(input, output) {
     year <- input$year
     lines(c(year, year), c(0,7), col="red", lwd=3)
     text(1965, 6, paste("Year =", year))
-    text(1965, 5.5, paste("Count =", round(yellowfin[yellowfin$year==year,2],2)))
+    text(1965, 5.5, paste("Count =", yellowfin[yellowfin$year==year,2]))
     output$PredYear <- renderPrint({input$PredYear})
     points(input$PredYear, newdata[newdata$year==input$PredYear,2], col="green")
     text(1998, 2, paste("Predicted Count = ", 
